@@ -1,0 +1,395 @@
+@import "_global.css";
+
+/*  contact-main  */
+
+.contact-main .container {
+  padding-top: 101px;
+}
+
+.contact-crumbs {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size: 14px;
+  /*line-height: 140%; !* 19.6px *!*/
+  margin-bottom: 60px;
+}
+
+.contact-crumbs .path-link {
+  color: #6F9114;
+  text-decoration: none;
+}
+
+.contact-crumbs .destination {
+  color: #A3A3A3;
+}
+
+.contact-crumbs div {
+  margin-right: 10px;
+}
+
+.contacts-title {
+  margin-bottom: 48px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.contact-info-item {
+  margin-right: 20px;
+  margin-bottom: 50px;
+}
+
+.contact-main .content .contact-info-item:nth-child(1) {
+  max-width: 236px;
+}
+
+.contact-main .content .contact-info-item:nth-child(2) {
+  max-width: 413px;
+}
+
+.contact-main .content .contact-info-item:nth-child(3) {
+  max-width: 409px;
+  margin-right: 0;
+}
+
+.contact-info-el {
+  display: flex;
+}
+
+.contact-phone {
+  margin-bottom: 77px;
+}
+
+.contact-address {
+  margin-bottom: 49px;
+}
+
+.contact-text {
+  margin-bottom: 5px;
+}
+
+.contact-main .contact-icon {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #8FB32C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.contact-text-title {
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.contact-text-desc {
+  color: #333;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway-Bold, sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+
+/*  map  */
+
+
+.map {
+  padding-top: 83px;
+}
+
+.map .container iframe {
+  border-radius: 20px;
+}
+
+/* форма для вопроса */
+
+.question-form {
+  display: none;
+}
+
+.question-form.show {
+  position: fixed;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  display: block;
+  z-index: 4;
+}
+
+.question-form-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.question-form-item {
+  position: relative;
+  max-width: 410px;
+  border-radius: 20px;
+  background: #FFF;
+  padding: 43px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+}
+
+.question-form-close {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.question-form-title {
+  max-width: 237px;
+  color: #333;
+  text-align: center;
+  font-family: Raleway-ExtraBold, sans-serif;
+  font-size: 30px;
+  margin-bottom: 13px;
+}
+
+.question-form-text {
+  max-width: 360px;
+  color: #333;
+  text-align: center;
+  font-family: Raleway-Regular, sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  margin-bottom: 25px;
+}
+
+.question-form-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.question-form-input {
+  width: 320px;
+  height: 60px;
+  padding: 19px 20px;
+  color: #333333;
+  font-family: Raleway-Medium, sans-serif;
+  font-size: 16px;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.question-form-textarea {
+  padding: 10px 20px;
+  color: #333333;
+  width: 100%;
+  height: 120px;
+  font-family: Raleway-Medium, sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  outline: none;
+  resize: none;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.confirm-box {
+  position: relative;
+  margin-bottom: 18px;
+  padding-top: 0;
+}
+
+.custom-checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 15px;
+  height: 15px;
+  top: 2px;
+  left: 3px;
+  border-radius: 50%;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.custom-checkbox + label {
+  display: block;
+  user-select: none;
+  margin-left: 35px;
+}
+
+.label-confirm {
+  max-width: 270px;
+  font-family: Mulish-Regular, sans-serif;
+  font-size: 11px;
+  line-height: 120%;
+  position: relative;
+  color: #333333;
+}
+
+.custom-checkbox:checked + label::before {
+  background-image: url("../images/global/check-circle-red.svg");
+}
+
+.label-confirm a {
+  color: #333333;
+}
+
+.question-form-button {
+  width: 100%;
+  height: 60px;
+  padding: 19px;
+  text-align: center;
+}
+
+
+/* задать вопрос */
+.order-info {
+  min-width: 380px;
+}
+
+
+@media screen and (max-width: 1449px) {
+  .contact-main .container {
+    padding-top: 155px; /* для отступа от хедера */
+  }
+
+  .big-title {
+    font-size: 46px;
+  }
+}
+
+@media screen and (max-width: 1320px) {
+
+  .big-title {
+    font-size: 40px;
+  }
+
+  .contact-info {
+    flex-wrap: wrap;
+  }
+
+  .contact-info-item {
+    max-width: unset;
+  }
+
+  .contact-info-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .contact-main .content .contact-info-item:nth-child(3) {
+    max-width: 465px;
+  }
+
+  .contact-text-desc {
+    font-size: 16px;
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+  .big-title {
+    font-size: 36px; /* остальные стили менять согласно названия с привязкой к странице */
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .big-title {
+    font-size: 28px;
+  }
+
+  .order-info {
+    min-width: unset;
+    max-width: min-content;
+    margin-bottom: 50px;
+  }
+
+  .order-title {
+    text-align: center;
+  }
+
+  .contact-text-desc {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .contact-main .container {
+    padding-top: 173px; /* для отступа от хедера */
+  }
+}
+
+@media screen and (max-width: 685px) {
+
+  .contacts-title {
+    margin-bottom: 34px;
+    text-align: center;
+  }
+
+  .contact-text {
+    margin-bottom: 0;
+  }
+
+  .contact-info-el {
+    margin-bottom: 20px;
+  }
+
+  .contact-info-item {
+    margin-bottom: 0;
+  }
+
+  .contact-info-el.contact-req {
+    margin-bottom: 0;
+  }
+
+  .contact-info-el.contact-address {
+    margin-bottom: 16px;
+  }
+}
+
+
+@media screen and (max-width: 483px) {
+  .contact-main .container {
+    padding-top: 78px;
+  }
+
+  .big-title {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .question-form-item {
+    margin: 0 15px;
+    padding: 35px 20px 27px;
+  }
+
+  .order-title {
+    font-size: 20px;
+    margin-bottom: 13px;
+  }
+
+  .question-form-text {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+}

@@ -1,0 +1,194 @@
+@import "_global.css";
+
+.documentations-main .container {
+  padding-top: 101px;
+}
+
+.documentations-title {
+  margin-bottom: 60px;
+}
+
+.documentations-content {
+  margin-bottom: 115px;
+}
+
+.documentations-content-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 30px;
+}
+
+.mySwiper {
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.pagination-box {
+  margin-top: 46px;
+}
+
+.documentations-content-item {
+  border-radius: 20px;
+  background: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px 20px 30px;
+}
+
+.documentations-content-item-text {
+  color: #333;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway-Bold, sans-serif;
+  font-size: 16px;
+}
+
+.documentations-content-item svg {
+  transition: .2s ease-in-out;
+  min-width: 50px;
+  margin-left: 10px;
+}
+
+.documentations-content-item svg:hover {
+  position: relative;
+  cursor: pointer;
+  margin-top: -4px;
+  margin-bottom: 4px;
+}
+
+.certificates-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 53px;
+}
+
+.swiper-button-lock {
+  display: block;
+}
+
+.certificates-carousel-wrapper {
+  overflow: hidden;
+  width: 1445px;
+}
+
+.certificates-carousel-list {
+
+}
+
+.certificates-carousel-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.certificates-item {
+  width: 330px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background: #FFF;
+}
+
+.certificates-item img {
+  width: 100%;
+}
+
+.commercial-offer-form input {
+  padding: 19px 20px;
+}
+
+
+
+
+
+@media screen and (max-width: 1700px) {
+  .certificates-carousel-wrapper {
+    width: 100%;
+  }
+
+}
+@media screen and (max-width: 1449px) {
+  .documentations-main .container {
+    padding-top: 155px;
+  }
+}
+
+@media screen and (max-width: 1395px) {
+  .big-title {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .big-title {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .big-title {
+    font-size: 28px;
+  }
+
+  .documentations-main .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .documentations-main .container {
+    padding-top: 173px; /* для отступа от хедера */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .documentations-content-items {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 10px;
+  }
+
+  .documentations-title {
+    margin-bottom: 34px;
+  }
+
+  .documentations-content {
+    margin-bottom: 74px;
+  }
+
+  .certificates-header {
+    margin-bottom: 26px;
+  }
+  .documentations-content-item svg {
+    min-width: 40px;
+    max-width: 40px;
+  }
+
+  .move-button svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .certificates-header {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .certificates-title {
+    margin-bottom: 26px;
+  }
+}
+@media screen and (max-width: 483px) {
+  .documentations-main .container {
+    padding-top: 78px;
+  }
+
+  .big-title {
+    font-size: 26px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 375px) {
+
+}
