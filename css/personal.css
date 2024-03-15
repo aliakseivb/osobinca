@@ -1,4 +1,4 @@
-@import "global.css";
+@import "./global.css";
 
 .personal-details-top-bar {
   display: none;
@@ -492,11 +492,7 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .application-button:hover {
-  /*position: unset;*/
-  /*margin-top: 0;*/
-  /*transform: none;*/
   margin-bottom: 34px;
-  /*background: #8FB32C;*/
 }
 
 .application-header {
